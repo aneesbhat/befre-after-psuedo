@@ -1,0 +1,203 @@
+* {
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+	list-style:none;
+	text-decoration:none;
+
+}
+
+:root {
+	--bg_color:lightblue;
+}
+
+.main-div {
+	width:500px;
+	height:50px;
+	background-color:lightblue;
+	margin:40px auto;
+	padding:40px 0px;
+	text-align:center;
+/*	color:white;*/
+}
+
+.main-div::before {
+	content:'Hi Guys';
+	color:red;
+	font-style:italic;
+	transition:2s;
+	opacity:0;
+
+}
+
+.main-div:hover::before {
+	opacity:1;
+
+}
+
+.main-div::after {
+	content:'Jammu & Kashmir';
+	color:green;
+	font-style:italic;
+	opacity:0;
+	transition:3s;
+}
+
+.main-div:hover::after {
+	opacity:1;
+
+}
+
+img {
+	width:100%;
+	height:100%;
+}
+
+.main-divv {
+	width:200px;
+	height:300px;
+	margin:auto;
+	border:1px solid red;
+	position:relative;
+	
+
+}
+
+
+
+.main-divv::after {
+	content:'';
+	width:100%;
+	height:100%;
+	background-image:url("images/gallery-img-06.jpg");
+	display:inline-block;
+	position:absolute;
+	left:0%;
+	opacity:0;
+	transition:2s;
+	
+	
+	
+}
+
+.main-divv:hover::after {
+	opacity:1;
+}
+
+
+
+/*img {
+	width:100%;
+	height:100%;
+}*/
+
+.main-div-2 {
+	width:calc(400px - 20px);
+	height:60px;
+	background-color:var(--bg_color);
+	margin:50px auto;
+	padding:20px 0px;
+	border:0.1px solid red;
+	text-align:center;
+	position:relative;
+}
+
+.main-div-2::after {
+	content:'';
+	border-width:10px 10px 10px 10px;
+	border-style:solid solid solid solid;
+	border-color:red transparent transparent transparent;
+	position:absolute;
+	top:60;
+	left:190;
+	opacity:0;
+	transition:2s;
+}
+
+.main-div-2:hover::after {
+	opacity:1;
+}
+
+.main-1 {
+	width:200px;
+	margin:auto;
+    border:1px solid red;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+.main-1 img {
+	width:100%;
+	height:200px;
+	transition:2s;
+
+}
+
+.main-1:hover img {
+	transform:scale(1.2);
+}
+
+.gen {
+	width:200px;
+	height:300px;
+	margin:auto;
+	border:1px solid red;
+	position:relative;
+	overflow:hidden;
+
+}
+
+.gen::after {
+	content:'';
+	width:100%;
+	height:100%;
+	background:url("images/gallery-img-06.jpg");
+	display:inline-block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	opacity:0;
+	transition:2s;
+	margin-bottom:30px;
+}
+
+.gen:hover::after {
+	opacity:1;
+	transform:scale(1.2);
+}
+
+.cone-main {
+	width:300px;
+	height:50px;
+	margin:20px 30px;
+	background-color:red;
+	color:white;
+	display:flex;
+	position:relative;
+	
+}
+
+.cone-main h4 {
+	align-self:center;
+
+}
+
+.cone-main::after {
+	content:'';
+	border-width:10px 10px 10px 10px;
+	border-style:solid solid solid solid;
+	border-color:orange transparent transparent transparent;
+	display:inline-block;
+	position:absolute;
+	bottom:-18;
+	left:130px;
+	opacity:0;
+	transition:2s;
+}
+
+.cone-main:hover::after {
+	opacity:1;
+}
+
+
+

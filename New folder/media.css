@@ -1,0 +1,13 @@
+@media only screen and (min-with:200px) and (max-width:575px) {
+    
+    section {
+    	background-color:red;
+    }
+
+	.video-mid {
+		flex-basis:97%;
+	}
+
+
+
+}
